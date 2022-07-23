@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Sara-Monintja/Profile-Generator#readme",
   "dependencies": {
+    "bootstrap": "^5.2.0",
     "inquirer": "^8"
   },
   "devDependencies": {
