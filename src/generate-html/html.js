@@ -15,20 +15,20 @@ function createCard(employee){
     // replace the placeholders with the actual data 
     let replaced = cardTemplate.replace('{{name}}', employee.getName())
         .replace('{{id}}', employee.getId())
-        .replace('{{email}}', employee.getEmail())
+        .replaceAll('{{email}}', employee.getEmail())
         .replace('{{role}}', employee.getRole());
 
     if(employee.getRole() === 'Manager'){
         replaced = replaced.replace('{{attr_key}}', 'Office Number')
-            .replace('{{attr_value}}', employee.getOfficeNumber())
+            .replaceAll('{{attr_value}}', employee.getOfficeNumber())
     }
     if(employee.getRole() === 'Engineer'){
         replaced = replaced.replace('{{attr_key}}', 'Github')
-            .replace('{{attr_value}}', "https://github.com/"+ employee.getGithub())
+            .replaceAll('{{attr_value}}', "https://github.com/"+ employee.getGithub())
     }
     if(employee.getRole() === 'Intern'){
         replaced = replaced.replace('{{attr_key}}', 'school')
-            .replace('{{attr_value}}', employee.getSchool())
+            .replaceAll('{{attr_value}}', employee.getSchool())
     }
 
     return replaced;

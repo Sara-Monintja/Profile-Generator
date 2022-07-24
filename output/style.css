@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #BEE5B0;
+    --dark-color: #411A4F;
+}
+
+.navbar-brand {
+    font-size: 10rem;
+}
+
+.container {
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+}
+
+#navbar {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.card-body {
+    justify-content: center;
+    text-align: center;
+}
+.card-header {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
