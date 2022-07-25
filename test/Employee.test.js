@@ -7,9 +7,9 @@ describe("Employee Test", () => {
     test("getName() will return the name property", () => {
 
         // arrange -- prepare the enviroment
-        const name = 'sam';
+        const name = 'Sarah';
     
-        const dummy = new Employee(1, 'sam@sam.com', name);
+        const dummy = new Employee(1, 'sda@sa.com', name);
 
         // act 
 

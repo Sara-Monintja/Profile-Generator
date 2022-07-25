@@ -33,13 +33,13 @@ async function main() {
         },
         {
             type: 'input',
-            message: "What is the email of employee?",
-            name: 'email',
+            message: "What is the name of employee?",
+            name: 'name',
         },
         {
             type: 'input',
-            message: "What is the name of employee?",
-            name: 'name'
+            message: "What is the email of employee?",
+            name: 'email'
         },
         {
             type: 'input',

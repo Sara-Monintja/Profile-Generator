@@ -1,20 +1,16 @@
+        <div class="col-6">
 
-<article>
-  <div class="container">
-    <div class="row justify-content-center">
-    
-      <div class="col-4 mt-4">
-          <div class="card-body mx-auto" style="width: 18rem">
-            <h5 class="card-header">{{name}}</h5>
-            <h6 class="card-text mb-2 mt-2 text-muted">{{role}}</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Email: <a href="mailto:{{email}}"> {{email}} </a></li>
-                <li class="list-group-item">ID: {{id}}</li>
-                <li class="list-group-item">{{attr_key}}: <a href="{{attr_value}}">{{attr_value}}</a></li>
-              </ul>          
+          <div class="card mb-3 mx-auto" style="width: 18rem">
+
+            <h5 class="card-header">{{name}}<br /><br />{{role}}</h5>
+
+              <div class="card-body">
+                <p class="email">Email: <a href="mailto:{{email}}"> {{email}} </a></p>
+                <p class="id">ID: {{id}}</p>
+                <p class="attr_key">{{attr_key}}: <a href="{{attr_value}}">{{attr_value}}</a></p>
+              </div>  
+
           </div>
       </div>
-    </div>
-  </div>
-</article>
+
 
